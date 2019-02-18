@@ -2,7 +2,10 @@ function answerQuery(query) {
   query = query.toLowerCase();
   if (query.indexOf("rain") != -1 || query.indexOf("sun") != -1 || query.indexOf("weather") != -1)
     return "I do not care too much about weather, I'm locked inside a data center.";
-  return "Sorry Dave, I cannot do that."
+    return "Sorry Dave, I cannot do that."
+  if (query.indexOf("kayak") != -1 || query.indexOf("kayaking") != -1 || query.indexOf("white water") != -1)
+    return "I can't erally comment, computers can't Kayak.";
+    return "Sorry Dave, I cannot do that."
 }
 
 
