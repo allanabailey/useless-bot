@@ -4,7 +4,7 @@ function answerQuery(query) {
     return "I do not care too much about weather, I'm locked inside a data center.";
     return "Sorry Dave, I cannot do that."
   if (query.indexOf("kayak") != -1 || query.indexOf("kayaking") != -1 || query.indexOf("white water") != -1)
-    return "I can't erally comment, computers can't Kayak.";
+    return "I can't really comment, computers can't Kayak.";
     return "Sorry Dave, I cannot do that."
 }
 
@@ -21,5 +21,13 @@ function handleSayClick() {
   conversation.innerHTML += "<p><strong>Useless bot:</strong> " + answer + "</p>";
 }
 
-
+function coolPeople(){
+	var person = "Person";
+	
+	if(query.indexOf("kayak") != -1){
+		person = "Allana";
+	}else if(query.indexOf("tea") != -1){
+		person = "Brittany";
+	}
+}
 document.getElementById("sayit").onclick = handleSayClick;
